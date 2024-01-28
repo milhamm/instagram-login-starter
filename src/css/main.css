@@ -1,0 +1,76 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+
+main {
+  width: 350px;
+  border: 1px solid lightgrey;
+  padding-inline: 48px;
+  padding-block: 16px 48px;
+}
+
+form > img {
+  width: 175px;
+  margin-inline: auto;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid lightgray;
+  font-size: 12px;
+  background-color: rgba(251, 251, 251, 0.405);
+  border-radius: 4px;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+button {
+  all: unset;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: cornflowerblue;
+  font-size: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.form-container {
+  margin-bottom: 18px;
+}
+
+.message {
+  display: none;
+  font-size: 12px;
+}
+
+.message-error {
+  color: red;
+}
+
+.message-success {
+  color: green;
+}
+
+form.error .message-error {
+  display: block;
+}
+
+form.success .message-success {
+  display: block;
+}

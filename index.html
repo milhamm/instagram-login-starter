@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login Page</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <form id="form" action="#">
+        <img src="/instagram-logo.svg" alt="Instagram logo" />
+        <div class="form-container">
+          <div class="form-control">
+            <input
+              autocomplete="off"
+              id="username"
+              type="text"
+              placeholder="Enter your username"
+            />
+          </div>
+          <div class="form-control">
+            <input id="password" type="password" placeholder="Password" />
+          </div>
+          <button>Log In</button>
+        </div>
+        <p class="message message-error"></p>
+        <p class="message message-success">Congrats!</p>
+      </form>
+    </main>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
